@@ -4,6 +4,7 @@
 ![Tech](https://img.shields.io/badge/Built_with-HTML%20%7C%20CSS%20%7C%20JS-orange)
 
 (Update 1.1):-18-02-2025
+(Update 1.2):-02-03-2025
 
 A colorful endless runner game with emoji-powered graphics and dynamic controls. Jump, dodge, and collect coins in this browser-based arcade experience!
 
@@ -18,9 +19,10 @@ A colorful endless runner game with emoji-powered graphics and dynamic controls.
 - ⭐ **Score tracking** with local high score system
 - 💥 Progressive difficulty with random obstacles (🚧, 🚗, 👾)
 - 🌈 Responsive design for all screen sizes
+- 🌙 Night mode
 
 ## 🕹️ How to Play
-1. **Avoid obstacles** while **collecting coins** (💰 = +10 points)
+1. **Avoid obstacles** while **collecting coins** (💰 = +03 points)
 2. Use **double jump** mechanics for advanced maneuvers
 3. Beat your high score and dominate the leaderboard!
 
