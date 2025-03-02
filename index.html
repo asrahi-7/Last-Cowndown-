@@ -262,16 +262,16 @@
         };
 
         // Night Mode Toggle
-        const themeButton = document.getElementById('toggleTheme');
-        themeButton.addEventListener('click', () => {
-            document.body.classList.toggle('night-mode');
-            if (document.body.classList.contains('night-mode')) {
-                themeButton.textContent = "☀️";
-            } else {
-                themeButton.textContent = "🌙";
-            }
-        });
-
+        console.log("Script loaded!"); // Add this at the beginning of the script
+themeButton.addEventListener('click', () => {
+    console.log("Night mode button clicked!"); // Add this inside the event listener
+    document.body.classList.toggle('night-mode');
+    if (document.body.classList.contains('night-mode')) {
+        themeButton.textContent = "☀️";
+    } else {
+        themeButton.textContent = "🌙";
+    }
+});
         // Update high score display
         document.getElementById('highScore').textContent = gameState.highScore;
 
