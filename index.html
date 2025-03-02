@@ -86,23 +86,28 @@
             background: rgba(255,255,255,0.7);
         }
 
-        /* Night Mode Button */
+        /* Night Mode Toggle Button */
         #toggleTheme {
             position: fixed;
             top: 20px;
             right: 20px;
-            background: #444;
-            color: white;
-            font-size: 4vw;
-            padding: 2px 4px;
-            border-radius: 3px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+            font-size: 40px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
             cursor: pointer;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
         }
 
         body.night-mode #toggleTheme {
-            background: #ddd;
-            color: black;
+            background: rgba(30, 30, 30, 0.9);
+            color: white;
         }
 
         #scoreBoard {
@@ -233,7 +238,7 @@
     </div>
 
     <!-- Night Mode Toggle Button -->
-    <button id="toggleTheme">🌙 Night Mode</button>
+    <button id="toggleTheme">🌙</button>
 
     <div id="gameOverMessage">
         <p id="performanceText"></p>
@@ -261,9 +266,9 @@
         themeButton.addEventListener('click', () => {
             document.body.classList.toggle('night-mode');
             if (document.body.classList.contains('night-mode')) {
-                themeButton.textContent = "☀️ Day Mode";
+                themeButton.textContent = "☀️";
             } else {
-                themeButton.textContent = "🌙 Night Mode";
+                themeButton.textContent = "🌙";
             }
         });
 
